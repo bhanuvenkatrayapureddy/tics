@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>TICS</title>
+</head>
+
+<body>
+    <div id="product-page" class="product-page">
+        <div class="nav1">
+            <img src="img/logo.png" alt="LOGO">
+            <div class="nav-li1">
+                <li><a onclick="producthide()">HOME</a></li>
+                <li><a onclick="cart()">CART</a></li>
+            </div>
+        </div>
+        <section class="section-a">
+            <div class="container">
+                <div>
+                    <h1>Casio G - Shock <br>
+                        <h1 id="modle">GA2100</h1>
+                    </h1>
+                    <p>
+                        Our Limited Edition G-Shock CasiOak watches are exclusively designed with creativity and
+                        originality in mind. Every dial, bezel, and index is customized and hand-painted with
+                        high-quality colors, resulting in a unique pattern for each watch. The paint is airbrushed, and
+                        the colors are UV-resistant, including a pearlized finish that gives them the shimmering
+                        refractive effect with the best opacity, ensuring it lasts for eternity and beyond.
+                    </p>
+                    <h2 id="product-price">Rs.25,000</h2>
+                    <a href="#" class="btn" onclick="addcart()">Add To Cart</a>
+                </div>
+                <img id="product-img" src="img/collection/Watch_1.png" alt="" />
+            </div>
+        </section>
+    </div>
+    <div id="pay" class="payment">
+        <div class="card">
+            <img src="img/visa-logo.png" alt="VISA">
+            <div class="card-detail">
+                <div class="card-num">
+                    <h1>CARD NUMBER</h1>
+                    <input type="text"
+                        placeholder="&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF;">
+                </div>
+                <div class="card-det">
+                    <div class="mon">
+                        <h1>EXPIRY DATE</h1>
+                        <input type="month" placeholder="YYYY/MM">
+                    </div>
+                    <div class="csv">
+                        <h1>CSV</h1>
+                        <input type="text" placeholder="&#x25CF;&#x25CF;&#x25CF;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="pay" onclick="pay()">PAY NOW</a>
+    </div>
+    <nav>
+        <img src="img/logo.png" alt="LOGO">
+        <div class="nav-li">
+            <li><a href="#collection">COLLECTION</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="login.html">LOG IN</a></li>
+        </div>
+    </nav>
+
+    <div id="cart" class="cart">
+        <button onclick="checkout()">CHECK OUT</button>
+    </div>
+    <div id="home" class="body">
+        <div class="body-text">
+            <h1>Discover Your Signature Timepiece: <br> Personalized G - Shock Watches.</h1>
+            <h3>Elevate Your Look with Unique Designs Tailored <br> Just for You.</h3>
+        </div>
+        <hr>
+        <div class="body-img"><img src="img/img.png" alt="WATCH"></div>
+    </div>
+    <div class="collection">
+        <div id="collection" class="item-heading">
+            <center>
+                <h1>OUR COLLECTION</h1>
+            </center>
+        </div>
+        <div class="items">
+            <a onclick="product(1)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_1.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A33<br> <span class="price"> Rs.25,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(2)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_2.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A15<br> <span class="price"> Rs.15,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(3)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_3.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A20<br> <span class="price"> Rs.10,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(4)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_4.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock B13<br> <span class="price"> Rs.8,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(5)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_5.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A18<br> <span class="price"> Rs.55,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(6)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_8.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A121<br> <span class="price"> Rs.1,25,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(7)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_9.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A31<br> <span class="price"> Rs.25,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(8)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_8.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A11<br> <span class="price"> Rs.20,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(9)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_11.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A13<br> <span class="price"> Rs.21,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+            <a onclick="product(10)">
+                <div class="item">
+                    <center>
+                        <div class="item-img"><img src="img/collection/Watch_9.png" alt="ITEM"></div>
+                    </center>
+                    <div class="item-desc">
+                        <center>
+                            <h1>G - Shock A22<br> <span class="price"> Rs.25,000</span></h1>
+                        </center>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="about-cont" id="about">
+        <div class="about-heading">
+            <center>
+                <h1>ABOUT US</h1>
+            </center>
+        </div>
+        <div class="about">
+            <img src="img/about 1.jpg" alt="about">
+            <div class="about-text">
+                <center>
+                    <h1>In-House Creativity and Craftsmanship</h1>
+                    <p>we create dozens of iterations of a single design, playing with different colors, finishes, and
+                        effects. Our limited edition G-Shock CasiOak watches are disassembled and personalized with
+                        original design and illustration and then customized and hand-painted with high-quality colors,
+                        resulting in a unique pattern for each watch. The paint is airbrushed, and the colors are
+                        UV-resistant.</p>
+                </center>
+            </div>
+        </div>
+        <div class="about-1">
+            <div class="about-text">
+                <center>
+                    <h1>Original Limited Edition Watches</h1>
+                    <p>Our Limited Edition G-Shock CasiOak watches are exclusively designed with creativity and
+                        originality in mind. Every dial, bezel, and index is customized and hand-painted with
+                        high-quality colors, resulting in a unique pattern for each watch. The paint is airbrushed, and
+                        the colors UV-resistant, including a pearlized finish that gives them the shimmering
+                        refractive effect with the best opacity.</p>
+            </div>
+            <img src="img/about 2.jpg" alt="about">
+
+        </div>
+        <div class="about">
+            <img src="img/about 3.jpg" alt="about">
+            <div class="about-text">
+                <center>
+                    <h1>Small Wrists Get a New Hype with TICS's CasiOak Mini</h1>
+                </center>
+                <p>Featuring a five-color rainbow with more compact dimensions that watch enthusiasts will appreciate,
+                    the G-Shock CasiOak Mini is a smaller alternative to the GA-2100. The Mini Polar & Latte Rainbow are
+                    unisex, offering great comfort for those with slender wrists.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contactblock" id="contact">
+        <center>
+            <h1 class="contant-heading">CONTACT US</h1>
+        </center>
+        <div class="contact">
+            <div class="contact-text">
+                <p>If you have questions about a TICS Designs product, or wish to speak to Customer Experience for any
+                    reason, please reach out.</p>
+                <div class="textblock">
+                    <h1>EMAIL</h1>
+                    <p>bhanuvenkat204@gmail.com</p>
+                </div>
+                <div class="textblock">
+                    <h1>PHONE NUMBER</h1>
+                    <p>+91 9392959267</p>
+                </div>
+
+            </div>
+            <div class="inputs">
+                <h2>FULL NAME</h2>
+                <input id="name" required>
+                <h2>EMAIL ID</h2>
+                <input id="email" type=" " required>
+                <h2>PHONE NUMBER</h2>
+                <input id="phone-no" type=" " required>
+                <h2>LET US KNOW HOW WE CAN HELP!</h2>
+                <textarea id="content" rows="4" cols="50"></textarea>
+                <div class="button">
+                    <button id="btn" onclick="sendEmail()">SUBMIT!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <center>
+            <h3>Copyright © 2023, TICS Designs</h3>
+        </center>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./index.js">
+
+    </script>
+
+</body>
+
+</html>
